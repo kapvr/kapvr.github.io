@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>kapur</title>
+</head>
+<body>
+
+        <div id="fade"></div>
+
+    <div id="box">
+        <topnav>
+            <span class="headerText" id="about" onClick="navi('aboutSection')">About </span>
+            <span class="headerText" id="actual" onClick="navi('actualSection')">My work</span>
+            <span class="headerText" id="actual" onClick="navi('studioSection')">Studio</span>
+            <span class="headerText" id="social" onClick="navi('socialSection')">Social</span>
+            <span class="headerText" id="contact" onClick="navi('contactSection')">Contact</span>
+        </topnav>
+
+        <span id="bars"> <i class="fas fa-bars"></i> </span>
+
+        <sidenav>
+             <ul>
+                 <li id="dot1" onClick="navi('aboutSection')"></li>
+                 <li id="dot2" onClick="navi('actualSection')"></li>
+                 <li id="dot3" onClick="navi('studioSection')"></li>
+                 <li id="dot4" onClick="navi('socialSection')"></li>
+                 <li id="dot5" onClick="navi('contactSection')"></li>
+                 
+             </ul>
+        </sidenav>
+
+        <section id="aboutSection">
+            
+            <div id="textBox">
+                <h1>
+                    Welcome to Kapur's personal website!
+                </h1>
+                <span>
+                    Here You can find some news about my channel, creativity, contact to me and more. 
+                    My IRL name is Kacper, I live in Poland, Rzeszow. I'm mainly guitarist, but also I do mix, mastering and bass tracks.
+                    I play guitar since 2012, started when I was a kid. 
+                    Check out some of my work below and feel free if You want contact me :)
+                </span>
+            </div>
+        </section>
+
+        <section id="actualSection">
+            <div id="gridderBig">
+                <div class="videoBox">
+                    <h1>Newest video</h1>
+                    
+                    <iframe src="https://www.youtube.com/embed/_GgQ80mk1eU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="videoBox">
+                    <h1>Random video</h1>
+                    
+                    <iframe src="https://www.youtube.com/embed/0d12Aroop70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="studioSection">
+            <div id="textBox">
+                <span>
+                    <div id="studioCols">
+                        <span>
+                        <h3>Guitars:</h3>
+                            EX400 Korea 2006<br>
+                            Les Paul Standard China 2008<br>
+                            Custom Flying V<br>
+                            Yamaha F-310<br>
+                            Farra 4/4<br> 
+                            LTD B55
+                        </span>
+
+                        <span>
+                            <h3>Amps/Cabinets:</h3>
+                            Peavey Vypyr 30<br>
+                            Ashdown PiBass 240 Head<br>
+                            MiBass 112 Cabinet
+                        </span>
+
+                        <span>
+                            <h3>Recording devices</h3>
+                            Prodipe TT1 Pro Lanen<br>
+                            Behringer U-Phoria UM2<br>
+                            Line 6 POD XT Live
+                        </span>
+                    </div>
+                    <h3>I record, mix and master in REAPER using some EQ's, Compressor's etc.</h3>
+                </span>
+            </div>
+        </section>
+
+        <section id="socialSection">
+            <h1>There You can find me:</h1>
+            <div id="gridder">
+                <div>
+                    <h2>Youtube</h2>
+                    <a href="https://www.youtube.com/channel/UCoVMvWOkt7G3l1YlCycm6vA"> <i class="fab fa-youtube"></i> </a>
+                </div>
+                <div>
+                    <h2>Soundcloud</h2>
+                    <a href="https://soundcloud.com/kapvr"> <i class="fab fa-soundcloud"></i> </a>
+                </div>
+                <div>
+                    <h2>Instagram</h2>
+                    <a href="https://www.instagram.com/?hl=pl"> <i class="fab fa-instagram"></i> </a>
+                </div>
+                <div>
+                    <h2>Messenger</h2>
+                    <a href="https://www.facebook.com/profile.php?id=100009034735166"> <i class="fab fa-facebook-messenger"></i> </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactSection">
+
+            <h2>Send e-mail to me:</h2> 
+            <h3>kacperovsky99@gmail.com</h3>
+            <br>
+            <form action="mailto:kacperovsky99@gmail.com" method="post" enctype="text/plain">
+                    Name:<br>
+                <input type="text" name="name" size="50"><br>
+                    E-mail:<br>
+                <input type="text" name="mail" size="50"><br>
+                    Comment:<br>
+                <input type="text" name="comment" size="50"><br><br>
+                <input class="btn" type="submit" value="Send">
+                <input class="btn" type="reset" value="Reset">
+            </form>    
+        </section>
+
+        <footer>
+            <span>Copyright 2019 © All rights reserved.</span>
+            <span>Designed by <a href="https://kamil-g.github.io/">KG</a></span>
+        </footer>
+
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

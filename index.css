@@ -1,0 +1,401 @@
+html, body
+{
+    background-color:rgb(10, 10, 10);
+    color: rgb(230, 230, 230);
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+    background: url("bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
+    padding-top: 5vh;
+}
+
+
+::-webkit-scrollbar 
+{
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track 
+{
+    background: black; 
+}
+   
+::-webkit-scrollbar-thumb 
+{
+    background: rgba(25, 25, 25); 
+    height: 40vh;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: rgb(200, 15, 15); 
+}
+
+
+#box
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+topnav
+{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    text-align: center;
+    font-size: 4rem;
+    position: fixed;
+    width: 70vw;
+    top: 0;
+}
+
+topnav span
+{
+    transition: .2s;
+    cursor: pointer;
+}
+
+topnav span:hover
+{
+    transform: scale(1.1);
+    color: rgb(200, 15, 15);
+}
+
+#bars
+{
+    display: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+#fade
+{
+    position: fixed;
+    top: 0;
+    background-color: black;
+    height: 50px;
+    width: 100vw;
+    box-shadow: 0 40px 40px 40px black;
+    transition: .2s;
+}
+
+#fade2
+{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    height: 50px;
+    width: 100vw;
+    box-shadow: 0 40px 40px 40px black;
+    transition: .2s;
+}
+
+sidenav
+{
+    position: fixed;
+    top: 35%;
+    right: 5%;
+}
+
+sidenav li
+{
+    font-size: 2.5rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+sidenav li:hover
+{
+    color: rgb(200, 200, 200);
+}
+
+section
+{
+    display: block;
+    width: 70vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+iframe
+{
+    width: 30vw;
+    height: 30vh;
+}
+
+#gridderBig
+{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+
+#gridder
+{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+
+#gridder a
+{
+    text-decoration: none;
+    font-size: 10rem;
+    color: rgb(200, 200, 200);
+    transition: .2s;
+}
+
+#gridder a:hover
+{
+    color: rgb(200, 15, 15);
+}
+
+#videoBox
+{
+    display: inline;
+    height: 50%;
+    width: 50%;
+}
+
+#studioCols
+{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+footer
+{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    font-size: 1rem;
+    position: relative;
+    bottom: 2vh;
+    padding-top: 10vh;
+}
+
+footer a
+{
+    color: rgb(230, 230, 230);
+}
+
+input
+{
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(230, 230, 230, 0);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    color:rgb(230, 230, 230);
+    transition: .2s;
+}
+
+.btn
+{
+    padding: 1rem;
+}
+
+.btn:hover
+{
+    background-color: rgb(200, 15, 15); 
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1440px) {
+        #box 
+        {
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 2rem;
+        }
+
+        topnav
+        {
+            font-size: 3rem;
+            width: 80vw;
+            top: 0;
+        }
+
+        html, body
+        {
+            background-size: auto 100%;
+        }
+
+        #socialSection 
+        {
+           font-size: 80%;
+        }
+
+        iframe
+        {
+            height: 350px;
+        }
+        
+    }
+
+  @media only screen and (max-width: 1024px) {
+        #box 
+        {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-size: 2rem;
+        }
+
+        sidenav
+        {
+            display: none;
+        }
+
+        topnav
+        {
+            font-size: 2rem;
+            width: 70vw;
+            top: 0;
+        }
+
+        iframe
+        {
+            width: 60vw;
+            height: 25vh;
+        }
+
+        #gridderBig
+        {
+            grid-template-columns: repeat(1,auto);
+            grid-template-rows: repeat(2,auto);
+        }
+
+        input
+        {
+            border: 1px solid rgb(200, 200, 200);
+            background-color: rgb(230, 230, 230, 0);
+            border-radius: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: 'Indie Flower', cursive;
+            font-size: 1rem;
+            color:rgb(230, 230, 230);
+            transition: .2s;
+        }
+
+        #gridder
+        {
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            grid-template-rows: repeat(2,auto);
+        }
+
+    }
+
+    @media only screen and (max-width: 800px) {
+        #box 
+        {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-size: 1.5rem;
+        }
+
+        topnav
+        {
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+        text-align: center;
+        font-size: 3rem;
+        position: fixed;
+        width: 70vw;
+        top: 0;
+        display: none;
+        background-color: rgb(200, 200, 200);
+        color: rgb(10, 10, 10);
+        padding-left: 15vw;
+        padding-right: 15vw;
+        left: 0;
+        }
+
+        #bars
+        {
+            display: block;
+            position: fixed;
+            left: 3%;
+            top: 1%;
+            z-index: 2;
+            font-size: 4rem;
+        }
+
+        #gridderBig
+        {
+            grid-template-columns: repeat(1,auto);
+            grid-template-rows: repeat(2,auto);
+        }
+
+        #studioCols
+        {
+            display: grid;
+            grid-template-columns: repeat(1,auto);
+            grid-template-rows: repeat(3,auto);
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+       
+        html, body
+        {
+            font-size: 10px;
+        }
+    }
+
+    @media only screen and (max-height: 800px) {
+        
+        html, body
+        {
+            font-size: 10px;
+        }
+
+        #socialSection a
+        {
+           font-size: 5rem;
+        }
+
+        #fade
+        {
+            position: fixed;
+            top: 0;
+            background-color: black;
+            height: 10px;
+            width: 100vw;
+            box-shadow: 0 20px 20px 30px black;
+            transition: .2s;
+        }
+
+    }
+
+    @media only screen and (max-width: 800px) {
+       
+        input 
+        {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        #box
+        {
+            margin-left: 15%;
+            margin-right: 15%;
+            
+            font-size: 2rem;
+        }
+
+        topnav
+        {
+            min-height: 10vh;s
+        }
+
+    }
