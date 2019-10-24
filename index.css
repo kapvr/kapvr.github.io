@@ -34,7 +34,7 @@ html, body
 
 ::-webkit-scrollbar-thumb:hover 
 {
-    background: rgb(200, 15, 15); 
+    background: linear-gradient(to right, rgba(17,17,158,1) 0%, rgba(176,33,114,1) 100%);
 }
 
 
@@ -48,13 +48,19 @@ html, body
 
 topnav
 {
+    position: absolute;
     display: grid;
     grid-template-columns: repeat(5,auto);
     text-align: center;
     font-size: 4rem;
     position: fixed;
-    width: 70vw;
     top: 0;
+    background: rgb(10, 10, 10);
+    width: 100vw;
+    top: 0;
+    left: 0;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid rgb(230,230,230);
 }
 
 topnav span
@@ -66,7 +72,6 @@ topnav span
 topnav span:hover
 {
     transform: scale(1.1);
-    color: rgb(200, 15, 15);
 }
 
 #bars
@@ -76,27 +81,6 @@ topnav span:hover
     cursor: pointer;
 }
 
-#fade
-{
-    position: fixed;
-    top: 0;
-    background-color: black;
-    height: 50px;
-    width: 100vw;
-    box-shadow: 0 40px 40px 40px black;
-    transition: .2s;
-}
-
-#fade2
-{
-    position: fixed;
-    bottom: 0;
-    background-color: black;
-    height: 50px;
-    width: 100vw;
-    box-shadow: 0 40px 40px 40px black;
-    transition: .2s;
-}
 
 sidenav
 {
@@ -153,7 +137,7 @@ iframe
 
 #gridder a:hover
 {
-    color: rgb(200, 15, 15);
+    color: rgb(10, 10, 10);
 }
 
 #videoBox
@@ -204,7 +188,7 @@ input
 
 .btn:hover
 {
-    background-color: rgb(200, 15, 15); 
+    background-color: rgb(10, 10, 10);
     cursor: pointer;
 }
 
@@ -220,7 +204,6 @@ input
         topnav
         {
             font-size: 3rem;
-            width: 80vw;
             top: 0;
         }
 
@@ -257,7 +240,6 @@ input
         topnav
         {
             font-size: 2rem;
-            width: 70vw;
             top: 0;
         }
 
@@ -364,16 +346,6 @@ input
            font-size: 5rem;
         }
 
-        #fade
-        {
-            position: fixed;
-            top: 0;
-            background-color: black;
-            height: 10px;
-            width: 100vw;
-            box-shadow: 0 20px 20px 30px black;
-            transition: .2s;
-        }
 
     }
 
@@ -395,7 +367,7 @@ input
 
         topnav
         {
-            min-height: 10vh;s
+            min-height: 10vh;
         }
 
     }
